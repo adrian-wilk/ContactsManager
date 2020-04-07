@@ -28,6 +28,14 @@ class ContactsManager{
 
 class Main {
     public static void main(String[] args){
-        ContactsManager myContactManager = new ContactsManager();
+        ContactsManager myContactsManager = new ContactsManager();
+
+        Contact Contact1 = new Contact();
+            Contact1.name = "Tom";
+            Contact1.phoneNumber = "500600700";
+
+        myContactsManager.addContact(Contact1);
+        Contact result = myContactsManager.searchContact("Tom");
+        System.out.println(result.phoneNumber);
     }
 }

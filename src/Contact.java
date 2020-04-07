@@ -1,5 +1,5 @@
 class Contact {
-    String name;
+    static String name;
     String email;
-    String phoneNumber;
+    static String phoneNumber;
 }
