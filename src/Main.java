@@ -7,7 +7,7 @@ class ContactsManager{
     // Constructor:
     ContactsManager(){
         friendsCount = 0;
-        MyFriends = new Contact[500];
+        this.myFriends = new Contact[500];
     }
 
     // Methods:
@@ -17,7 +17,7 @@ class ContactsManager{
     }
 
     Contact searchContact(String searchName){
-        for(int i=0, i<friendsCount; i++){
+        for(int i=0; i < friendsCount; i++){
             if(myFriends[i].name.equals(searchName)){
                 return myFriends[i];
             }
@@ -27,7 +27,7 @@ class ContactsManager{
 }
 
 class Main {
-    public static void main(String[] args_{
+    public static void main(String[] args){
         ContactsManager myContactManager = new ContactsManager();
     }
 }
